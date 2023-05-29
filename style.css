@@ -30,15 +30,46 @@ h1 {
     font-family: 'Gruppo', sans-serif;
     font-size: 3rem;
     letter-spacing: 1rem;
-    line-height: .2;
+    /* line-height: .2; */
 }
 
 .screen {
-    width: 600px;
-    height: 400px;
-    border: 2px solid yellow;
+    width: 50rem;
+    height: 30rem;
+    position: relative;
+    /* z-index: 1; */
+    /* border: 6px solid yellow; */
     background-color: crimson;
+    overflow: hidden;
 }
+    .screen::before,
+    .screen::after {
+        --width: 12rem;
+        --height: 7rem;
+
+        content: '';
+        position: absolute;
+        /* z-index: 2; */
+        width: var(--width);
+        height: var(--height);
+        transform: rotate(-36deg);
+        /* transform: rotate(-30deg); */
+        /* background-color: purple; */
+        background-color: #222;
+    }
+    .screen::before {
+        /* background-color: lime; */
+        transform-origin: 0 100%;
+        top: 0;
+        left: 0;
+        border-bottom: 6px solid yellow;
+    }    
+    .screen::after {
+        transform-origin: 100% 0;
+        bottom: 0;
+        right: 0;
+        border-top: 6px solid yellow;
+    }
 
 footer {
     padding: 1rem;
