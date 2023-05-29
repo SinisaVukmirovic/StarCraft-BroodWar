@@ -1,0 +1,107 @@
+/* desktop */
+@keyframes frame-move {
+    /* start 1 */
+    0% {
+        background-position: 0 0;
+    /* background-size: 110%; */
+
+    }
+    /* stay still */
+    5% {
+        background-position: 0 0;
+    /* background-size: 110%; */
+
+    }
+    /* glide */
+    10% {
+        background-position: 105% 10%;
+    /* background-size: 110%; */
+
+    }
+    /* stay still */
+    15% {
+        background-position: 105% 10%;
+    /* background-size: 110%; */
+
+    }
+    /* jump to frame 2 */
+    15.1% {
+        background-position: 108% 30%;
+    /* background-size: 110%; */
+
+    }
+        /* stay still */
+    20% {
+        background-position: 108% 30%;
+    background-size: 110%;
+
+    }
+    /* glide */
+    30% {
+        background-position: 0% 30%;
+    background-size: 100%;
+
+    }
+    /* stay still */
+    40% {
+        background-position: 0 30%;
+    background-size: 100%;
+
+
+    }
+    /* jump to frame 3 */
+    40.1% {
+        background-position: 0 52%;
+    background-size: 110%;
+
+
+    }
+    /* stay still */ 
+    50% {
+        background-position: 0 52%;
+    }
+    /* glide */
+    60% {
+        background-position: 108% 53%;  
+    }
+    /* stay still */
+    70% {
+        background-position: 108% 53%;
+    }   
+     /*jump to frame 4  */
+    70.1% {
+        background-position: 0 75%;
+    }
+    /* stay still */
+    75% {
+        background-position: 0 75%;
+        background-size: 110%;
+    }
+    /* glide */
+    80% {
+        background-position: 110% 77%;
+        background-size: 100%;
+    }
+    /* stay still */
+    87% {
+        background-position: 110% 77%;
+        background-size: 100%;
+    }
+    /* jump to frame */
+    87.1% {
+        background-position: 102% 98%;
+        background-size: 110%;
+    }
+    /* stay still */
+    92% {
+        background-position: 102% 98%;
+    }
+    /* glide */
+    97% {
+        background-position: 0 101%;
+    }
+    /* stay still */
+    100% {
+        background-position: 0 101%;
+    }
+}

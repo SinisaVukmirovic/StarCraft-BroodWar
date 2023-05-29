@@ -1,3 +1,5 @@
+@import 'keyframes.css';
+
 *,
 *::after,
 *::before {
@@ -6,18 +8,24 @@
     padding: 0;
 }
 
+:root {
+    --bg-clr: #222;
+    --border-clr: lime;
+}
+
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #222;
+    background-color: var(--bg-clr);
     color: #eee;
 }
 
 header {
     text-align: center;
+    color: var(--border-clr);
     padding: 1rem;
 }
 
@@ -39,9 +47,14 @@ h1 {
     aspect-ratio: 16 / 9;
     position: relative;
     /* z-index: 1; */
-    border: 4px solid yellow;
-    background-color: crimson;
+    border: 4px solid var(--border-clr);
+    /* background-color: crimson; */
     /* overflow: hidden; */
+    background-image: url('./img/screen.png');
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: 0 0;
+    animation: frame-move 10s ease-in-out infinite
 }
     .screen::before,
     .screen::after {
@@ -57,26 +70,65 @@ h1 {
         transform: rotate(-34deg);
         /* transform: rotate(-30deg); */
         /* background-color: purple; */
-        background-color: #222;
+        background-color: var(--bg-clr);
     }
     .screen::before {
         /* background-color: lime; */
         transform-origin: 0 100%;
         top: 0;
         left: 0;
-        border-bottom: 5px solid yellow;
+        border-bottom: 5px solid var(--border-clr);
     }    
     .screen::after {
         transform-origin: 100% 0;
         bottom: 0;
         right: 0;
-        border-top: 5px solid yellow;
+        border-top: 5px solid var(--border-clr);
     }
 
 footer {
     padding: 1rem;
+    font-family: 'Gruppo', sans-serif;
 }
 
+/* @keyframes frame-move {
+    0% {
+        background-position: 0 0;
+    }
+    10% {
+        background-position: 0 0;
+    }
+    20% {
+        background-position: 120% 10%;
+    }
+    30% {
+        background-position: 120% 10%;
+    }
+    30.5% {
+        background-position: 120% 20%;
+    }
+    40% {
+        background-position: 120% 20%;
+    }
+    50% {
+        background-position: 0 30%;
+    }
+    60% {
+        
+    }
+    70% {
+        
+    }
+    80% {
+        
+    }
+    90% {
+        
+    }    
+    100% {
+        
+    }
+} */
 
 @media (min-width: 320px) {
     html {
