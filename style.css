@@ -1,4 +1,4 @@
-@import 'keyframes.css';
+@import 'keyframes-2.css';
 
 *,
 *::after,
@@ -50,12 +50,12 @@ h1 {
     border: 4px solid var(--border-clr);
     /* background-color: crimson; */
     /* overflow: hidden; */
-    background-image: url('./img/screen.png');
+    background-image: url('./img/screen-2.png');
     background-repeat: no-repeat;
-    background-size: 110%;
-    background-position: 0 0;
-    animation: frame-move 10s ease-in-out infinite
-}
+    /* background-size: auto 150%;
+    background-position: 94% 100%; */
+    animation: frame-move-2 50s ease-in-out infinite;
+} 
     .screen::before,
     .screen::after {
         --width: 12rem;
