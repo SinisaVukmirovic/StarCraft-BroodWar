@@ -9,7 +9,7 @@
 }
 
 :root {
-    --bg-clr: #2d3135;
+    --bg-clr: #06060E;
     --border-clr: lime;
 }
 
@@ -54,7 +54,7 @@ h1 {
     background-repeat: no-repeat;
     /* background-size: auto 150%;
     background-position: 94% 100%; */
-    /* animation: frame-move-2 50s ease-in-out infinite; */
+    animation: frame-move-2 50s ease-in-out infinite;
 } 
     .screen::before,
     .screen::after {
