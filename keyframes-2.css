@@ -1,5 +1,4 @@
 /* desktop */
-/* desktop */
 @keyframes frame-move-2 {
     /* start 1 */
     0% {
@@ -132,5 +131,143 @@
     100% {
         background-size: auto 150%;
         background-position: 0 0;
+    }
+}
+
+/* phone */
+@media (min-width: 375px) {
+    @keyframes frame-move-2 {
+        /* start 1 */
+        0% {
+            background-size: auto 100%;
+            background-position: 0 0;
+        }
+        /* still */
+        5% {
+            background-size: auto 100%;
+            background-position: 0 0;
+        }
+        /* glide */
+        10% {
+            background-size: auto 100%;
+            background-position: 10% 100%;
+        }
+        /* still */
+        15% {
+            background-size: auto 100%;
+            background-position: 10% 100%;
+        }
+        /* jump */
+        15.1% {
+            background-size: auto 100%;
+            background-position: 29% 100%;
+        }
+        /* still */
+        20% {
+            background-size: auto 100%;
+            background-position: 29% 100%;
+        }
+        /* glide */
+        25% {
+            background-size: auto 100%;
+            background-position: 19% 100%;
+        }
+        /* still */
+        30% {
+            background-size: auto 100%;
+            background-position: 19% 100%;
+        }
+        /* jump to frame */
+        30.1% {
+            background-size: auto 100%;
+            background-position: 46% 100%;
+        }
+        /* still */
+        35% {
+            background-size: auto 100%;
+            background-position: 46% 100%;
+        }
+        /* glide */
+        40% {
+            background-size: auto 100%;
+            background-position: 39% 100%;
+        }
+        /* still */
+        45% {
+            background-size: auto 100%;
+            background-position: 39% 100%;
+        }
+        /* jump */
+        45.1% {
+            background-size: auto 150%;
+            background-position: 53% 0;
+        }
+        /* still */
+        50% {
+            background-size: auto 150%;
+            background-position: 53% 0;
+        }
+        /* glide */
+        55% {
+            background-size: auto 100%;
+            background-position: 62% 0;
+        }
+        /* still */
+        60% {
+            background-size: auto 100%;
+            background-position: 62% 0;
+        }
+        /* jump */
+        60.1% {
+            background-size: auto 180%;
+            background-position: 77% 0;
+        }
+        /* still */
+        65% {
+            background-size: auto 180%;
+            background-position: 77% 0;
+        }
+        /* glide */
+        70% {
+            background-size: auto 100%;
+            background-position: 77% 0;
+        }
+        /* still */
+        75% {
+            background-size: auto 100%;
+            background-position: 77% 0;
+        }
+        /* jump */
+        75.1% {
+            /* background-size: auto 113%;
+            background-position: 98% 100%; */
+            background-size: auto 100%;
+            background-position: 90% 0;
+        }
+        /* still */
+        80% {
+            background-size: auto 100%;
+            background-position: 90% 0;
+        }
+        /* glide */
+        85% {
+            background-size: auto 100%;
+            background-position: 99% 0;
+        }
+        /* still */
+        90% {
+            background-size: auto 100%;
+            background-position: 99% 0;
+        }
+        /* jump */
+        90.1% {
+            background-size: auto 100%;
+            background-position: 0 0;
+        }
+        /* still */
+        100% {
+            background-size: auto 100%;
+            background-position: 0 0;
+        }
     }
 }
