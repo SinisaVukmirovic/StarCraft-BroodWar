@@ -21,8 +21,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--bg-clr);
-    background: linear-gradient(90deg, #000 0%, var(--bg-clr) 20%, var(--bg-clr) 80%, #000 100%);
+    background: var(--bg-clr);
+    /* background: linear-gradient(90deg, #000 0%, var(--bg-clr) 20%, var(--bg-clr) 80%, #000 100%); */
     color: #eee;
 }
 
@@ -109,8 +109,15 @@ h1 {
 
 footer {
     padding: 1rem;
-    font-family: 'Gruppo', sans-serif;
+    font-family: sans-serif;
 }
+    footer a {
+        text-decoration: none;
+        color: #aaa;
+    }
+        footer a:hover {
+            color: var(--theme-clr);
+        }
 
 /* @keyframes frame-move {
     0% {
@@ -154,6 +161,9 @@ footer {
 @media (min-width: 320px) {
     html {
         font-size: 6px;
+    }
+    body {
+        background: var(--bg-clr);
     }
     header {
         margin-top: 5rem;
@@ -239,11 +249,14 @@ footer {
     html {
         font-size: 14px;
     }
+    body {
+        background: linear-gradient(90deg, #000 0%, var(--bg-clr) 20%, var(--bg-clr) 80%, #000 100%);
+    }
     header {
-        margin-top: 3rem;
+        margin-top: 5rem;
     }
     .screen {
-        width: 55rem;
+        width: 60rem;
     }
 }
 
@@ -253,8 +266,5 @@ footer {
     }
     header {
         margin-top: 3rem;
-    }
-    .screen {
-        width: 60rem;
     }
 }
