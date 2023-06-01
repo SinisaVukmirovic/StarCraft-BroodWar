@@ -20,21 +20,37 @@ const toggleAudio = () => {
 
 audioControl.addEventListener('click', toggleAudio);
 
+// const hackEffect = (e) => {
+//     let iterations = 0;
+
+//     const interval = setInterval(() => {
+//         e.target.innerText = e.target.innerText.split('')
+//         .map(letter => characters[Math.floor(Math.random() * 42)])
+//         .join('');
+
+//         if (iterations >= 9) clearInterval(interval);
+    
+//         iterations += 1;
+//     }, 50);    
+// }
+
 const hackEffect = (e) => {
     let iterations = 0;
 
     const interval = setInterval(() => {
         e.target.innerText = e.target.innerText.split('')
-        .map(letter => characters[Math.floor(Math.random() * 42)])
+        .map((letter, index) => {
+            if (index < iterations) {
+                return e.target.dataset.word[index];
+            }
+            return characters[Math.floor(Math.random() * 42)];
+        })
         .join('');
 
-        if (iterations >= 9) clearInterval(interval);
+        if (iterations >= e.target.dataset.word.length) clearInterval(interval);
     
-        iterations += 1;
-    }, 50);
-
-    
+        iterations += 1 / 6;
+    }, 50);    
 }
 
 hackerAnimElem.addEventListener('mouseover', hackEffect);
-

@@ -38,10 +38,11 @@ header {
 }
 
 h1 {
-    font-family: 'Gruppo', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    /* font-family: monospace; */
     color: var(--theme-clr);
     font-size: 2rem;
-    letter-spacing: 1rem;
+    letter-spacing: .75rem;
     /* line-height: .2; */
     text-transform: uppercase;
     
