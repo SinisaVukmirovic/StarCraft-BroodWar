@@ -10,11 +10,14 @@ const toggleAudio = () => {
     if (muteAudio) {
         muteAudio = !muteAudio;
         audio.play();
-        audioControl.style.filter = "brightness(50%)";
+        // audioControl.style.filter = "brightness(50%)";
+        audioControl.querySelector('img').src = './img/sound-off.svg';
+
     } else {
         muteAudio = !muteAudio;
         audio.pause();
-        audioControl.style.filter = "brightness(100%)";
+        // audioControl.style.filter = "brightness(100%)";
+        audioControl.querySelector('img').src = './img/sound-on.svg';
     }
 }
 
@@ -60,8 +63,8 @@ const hackEffect = (e) => {
 
         if (iterations >= e.dataset.word.length) clearInterval(interval);
     
-        iterations += 1 / 6;
-    }, 40);    
+        iterations += 1 / 10;
+    }, 30);    
 }
 
 setInterval(() => {
