@@ -1,0 +1,89 @@
+@media (min-width: 320px) {
+    html {
+        font-size: 6px;
+    }
+    body {
+        background: var(--bg-clr);
+    }
+    header {
+        margin-top: 5rem;
+    }
+    .screen {
+        width: 40rem;
+        aspect-ratio: 3 / 4;
+    }
+}
+
+@media (min-width: 360px) {
+    html {
+        font-size: 8px;
+    }
+    /* header {
+        margin-top: 5rem;
+    } */
+    .screen {
+        width: 35rem;
+        /* aspect-ratio: 8 / 12; */
+    }
+}
+
+@media (min-width: 412px) {
+    html {
+        font-size: 10px;
+    }
+    .screen {
+        width: 34rem;
+        aspect-ratio: 3 / 4;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 820px) {
+    .screen {
+        /* width: 50rem; */
+        aspect-ratio: 10 / 16;
+    }
+    /* .overlay {
+        aspect-ratio: 16 / 9;
+    } */
+}
+
+@media (min-width: 1024px) {
+    html {
+        font-size: 12px;
+    }
+    header {
+        margin: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 14px;
+    }
+    body {
+        background: linear-gradient(90deg, #000 0%, var(--bg-clr) 20%, var(--bg-clr) 80%, #000 100%);
+        min-height: 100vh;
+    }
+    header {
+        margin-top: 5rem;
+    }
+    .screen {
+        width: 60rem;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+@media (min-width: 1600px) {
+    html {
+        font-size: 16px;
+    }
+    header {
+        margin-top: 3rem;
+    }
+}
