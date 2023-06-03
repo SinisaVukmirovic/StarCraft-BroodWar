@@ -23,3 +23,28 @@ const hackEffect = (e) => {
 }
 
 export default hackEffect;
+
+// ========== version for hover ========
+// let interval = null;
+
+// const hackEffect = (e) => {
+//     let iterations = 0;
+//     clearInterval(interval);
+
+//     interval = setInterval(() => {
+//         e.target.innerText = e.target.innerText.split('')
+//         .map((letter, index) => {
+//             if (index < iterations) {
+//                 return e.target.dataset.word[index];
+//             }
+//             return characters[Math.floor(Math.random() * 42)];
+//         })
+//         .join('');
+
+//         if (iterations >= e.target.dataset.word.length) clearInterval(interval);
+    
+//         iterations += 1 / 6;
+//     }, 40);    
+// }
+
+// hackerAnimElem.addEventListener('mouseover', hackEffect);

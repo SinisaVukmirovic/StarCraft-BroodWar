@@ -1,5 +1,3 @@
-@import './keyframes-desk.css';
-
 /* phone */
 @media (min-width: 375px) {
     @keyframes frame-move-2 {
@@ -105,8 +103,6 @@
         }
         /* jump */
         75.01% {
-            /* background-size: auto 113%;
-            background-position: 98% 100%; */
             background-size: auto 100%;
             background-position: 90% 0;
         }

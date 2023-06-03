@@ -18,12 +18,8 @@
     html {
         font-size: 8px;
     }
-    /* header {
-        margin-top: 5rem;
-    } */
     .screen {
         width: 35rem;
-        /* aspect-ratio: 8 / 12; */
     }
 }
 
@@ -45,12 +41,8 @@
 
 @media (min-width: 820px) {
     .screen {
-        /* width: 50rem; */
         aspect-ratio: 10 / 16;
     }
-    /* .overlay {
-        aspect-ratio: 16 / 9;
-    } */
 }
 
 @media (min-width: 1024px) {
