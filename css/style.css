@@ -32,21 +32,43 @@ header {
     color: var(--border-clr);
     padding: 1rem;
     user-select: none;
+    
 }
 
 .logo {
     width: 35rem;
     margin: 0 auto;
+    animation: fade-drop 2s ease-out 1s backwards;
 }
+    @keyframes fade-drop {
+        from {
+            transform: translateY(-3rem);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
 
-h1 {
+h1.title {
     font-family: 'Roboto Mono', monospace;
     color: var(--theme-clr);
     font-size: 2.25rem;
     letter-spacing: .75rem;
     text-transform: uppercase;
-    
+    animation: fade-scale 2s ease-out 2s backwards;
 }
+    @keyframes fade-scale {
+        from {
+            scale: .5;
+            opacity: 0;
+        }
+        to {
+            scale: 1;
+            opacity: 1;
+        }
+    }
 
 .screen {
     width: 50rem;
@@ -108,9 +130,10 @@ h1 {
     to {
         background-position: 0% -100%;
     }
-    }
+}
 
 span.audio {
+    rotate: 180deg;
     position: absolute;
     z-index: 2;
     top: 0;
@@ -120,8 +143,6 @@ span.audio {
     cursor: pointer;
     color: var(--theme-clr);
     font-size: 3rem;
-    display: grid;
-    place-items: center;
     border-radius: 100%;
 }
 

@@ -7,32 +7,32 @@
             background-position: 0 0;
         }
         /* still */
-        5% {
+        10% {
             background-size: auto 150%;
             background-position: 0 0;
         }
         /* glide */
-        10% {
+        14% {
             background-size: auto 150%;
             background-position: 3% 100%;
         }
         /* still */
-        15% {
+        18% {
             background-size: auto 150%;
             background-position: 3% 100%;
         }
         /* jump */
-        15.01% {
+        18.01% {
             background-size: auto 130%;
             background-position: 23% 100%;
         }
         /* still */
-        20% {
+        22% {
             background-size: auto 130%;
             background-position: 23% 100%;
         }
         /* glide */
-        25% {
+        26% {
             background-size: auto 130%;
             background-position: 20% 0;
         }
